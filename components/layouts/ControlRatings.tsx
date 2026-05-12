@@ -89,15 +89,12 @@ export const ControlRatings = () => {
                 "{rating.message}"
               </p>
 
-              <div className="flex justify-between items-center border-t border-zinc-50 pt-6 flex-row-reverse">
+              <div className="border-t border-zinc-50 pt-6">
                 <div className="text-right">
                   <h4 className="font-bold text-zinc-900">{rating.fullName}</h4>
                   <p className="text-xs text-zinc-400 mt-1">
                     {new Date(rating.created_at).toLocaleDateString('ar-EG')}
                   </p>
-                </div>
-                <div className="flex gap-1 text-amber-400">
-                  <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
                 </div>
               </div>
             </motion.div>
