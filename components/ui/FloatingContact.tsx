@@ -1,10 +1,15 @@
 'use client';
 import React, { useState } from 'react';
+import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaWhatsapp, FaFacebookF, FaCommentDots, FaTimes } from 'react-icons/fa';
 
 export const FloatingContact = () => {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+
+  // إخفاء المكون تماماً إذا كنا داخل لوحة التحكم
+  if (pathname?.startsWith('/control')) return null;
 
   const contactLinks = [
     {
@@ -17,7 +22,7 @@ export const FloatingContact = () => {
       name: 'فيسبوك',
       icon: <FaFacebookF />,
       color: 'bg-[#1877F2]',
-      href: 'https://www.facebook.com/', // تقدر تعدل اللينك ده براحتك
+      href: 'https://www.facebook.com/', 
     },
   ];
 
@@ -50,7 +55,7 @@ export const FloatingContact = () => {
         onClick={() => setIsOpen(!isOpen)}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="bg-primary text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl z-10"
+        className="bg-[#c5a059] text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl z-10"
       >
         {isOpen ? <FaTimes /> : <FaCommentDots />}
       </motion.button>

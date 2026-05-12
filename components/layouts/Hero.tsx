@@ -1,79 +1,60 @@
 'use client';
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Button } from '../ui/Button';
-import Link from 'next/link';
+
 
 export const Hero = () => {
   return (
-    <section className="relative flex items-center pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-white">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
-          <div className="lg:col-span-7 z-10 text-right">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <div className="inline-block mb-6">
-                <div className="flex items-center gap-2 text-primary font-bold text-sm bg-primary/5 px-4 py-2 rounded-full border border-primary/10">
-                   <span>إتقان في كل تفصيلة</span>
-                   <span className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse" />
-                </div>
-              </div>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#f7f4ef]">
+      {/* Background Grid Image - Spans entire top */}
+      <div 
+        className="absolute inset-0 z-0 opacity-60 bg-center bg-repeat mix-blend-multiply"
+        style={{ 
+          backgroundImage: 'url("/imgs/MainGrid 2.png")',
+          backgroundSize: '100% 100%'
+        }}
+      />
 
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-zinc-900 mb-8 leading-[1.1]">
-                الصنعة | خبراء الجبس <br />
-                <span className="text-primary">وواجهات GRB و GRC</span>
-              </h1>
-              
-              <p className="text-xl leading-relaxed text-zinc-500 mb-12 max-w-2xl ml-auto">
-                الصنعة هي شريككم المثالي لتحويل التصاميم المعمارية إلى واقع ملموس. متخصصون في التوريد والتركيب الاحترافي لكافة أعمال الجبسوم بورد، والأسقف المعلقة، وواجهات الـ GRC والـ GRB الخارجية. نجمع بين الدقة الهندسية واللمسة الفنية لنقدم تشطيبات استثنائية تناسب فخامة الفيلات والقصور، مع الالتزام الكامل بأعلى معايير الجودة في كل تفصيلة.
-              </p>
+      <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 text-center pt-32 md:pt-24">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+          className="mb-6 md:mb-10"
+        >
+          <h1 className="text-[50px] sm:text-[80px] md:text-[150px] lg:text-[180px] font-bold text-zinc-900 leading-[1.1] md:leading-none tracking-tighter uppercase font-serif">
+            EL SANAA
+          </h1>
+        </motion.div>
 
-              <div className="flex flex-col sm:flex-row-reverse items-center gap-4 justify-start">
-                <Button href='https://wa.me/+201027227796' size="lg" className="w-full sm:w-auto bg-primary text-white px-12 rounded-none h-14 hover:bg-primary/90">
-                  تواصل عبر واتساب
-                </Button>
-                <Link href="#portfolio" className="w-full sm:w-auto">
-                  <Button variant="outline" size="lg" className="w-full sm:w-auto border-zinc-900 text-zinc-900 px-12 rounded-none h-14 hover:bg-zinc-50">
-                    معرض المشاريع
-                  </Button>
-                </Link>
-              </div>
-            </motion.div>
-          </div>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="max-w-3xl mx-auto px-4"
+        >
+          <p className="text-lg sm:text-xl md:text-3xl text-zinc-600 leading-relaxed font-serif italic mb-6">
+            أهلاً بكم في الصنعة للمعمار، حيث نبني إبداعات تتجاوز الخيال.
+          </p>
+          <p className="text-sm sm:text-lg md:text-xl text-zinc-500 leading-relaxed font-medium">
+            هنا تندمج الوظيفة مع الجمال لتشكيل أرقى المنشآت للإنسان المعاصر.
+          </p>
+        </motion.div>
 
-          <div className="lg:col-span-5 relative">
-            <motion.div 
-               initial={{ opacity: 0, scale: 0.9 }}
-               animate={{ opacity: 1, scale: 1 }}
-               transition={{ duration: 1 }}
-               className="relative aspect-3/4 overflow-hidden shadow-2xl rounded-2xl"
-            >
-              <img 
-                src="/imgs/profile_11.jpeg" 
-                alt="ديكورات جبس فاخرة" 
-                className="w-full h-full object-cover"
-              />
-            </motion.div>
-            
-            {/* Floating Decorative Element in Arabic */}
-            <motion.div 
-               initial={{ opacity: 0, y: 50 }}
-               animate={{ opacity: 1, y: 0 }}
-               transition={{ duration: 0.8, delay: 0.5 }}
-               className="absolute -bottom-10 -right-10 bg-zinc-900 p-8 shadow-xl hidden xl:block rounded-xl"
-            >
-              <div className="text-xs font-bold uppercase tracking-widest text-zinc-500 mb-2">أكثر من</div>
-              <div className="text-5xl font-black text-white tracking-tighter">٢٥ سنة</div>
-              <div className="text-sm font-medium text-primary mt-2">خبرة وإتقان يدوي</div>
-            </motion.div>
-          </div>
-
-        </div>
+        {/* Floating Decorative Lines */}
+        <div className="absolute top-1/2 left-0 w-full h-0.5 bg-[#c5a059]/20 -translate-y-1/2 hidden lg:block" />
+        <div className="absolute top-0 left-1/2 w-0.5 h-full bg-[#c5a059]/20 -translate-x-1/2 hidden lg:block" />
       </div>
+
+      {/* Bottom Scroll Indicator */}
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5 }}
+        className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3"
+      >
+        <span className="text-xs font-bold tracking-[0.3em] text-zinc-400 uppercase">اكتشف المزيد</span>
+        <div className="w-0.5 h-16 bg-[#c5a059]" />
+      </motion.div>
     </section>
   );
 };

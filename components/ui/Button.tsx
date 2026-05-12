@@ -19,9 +19,9 @@ export const Button = ({
   const baseStyles = "inline-flex items-center justify-center rounded-md font-medium transition-all duration-200 focus:outline-none disabled:opacity-50 disabled:pointer-events-none active:scale-95 cursor-pointer";
   
   const variants = {
-    primary: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20",
-    outline: "border-2 border-primary text-primary hover:bg-primary hover:text-white",
-    ghost: "text-foreground hover:bg-muted"
+    primary: "bg-primary text-primary-foreground hover:bg-primary/90 active:bg-primary/80 shadow-lg shadow-primary/20",
+    outline: "border-2 border-primary text-primary hover:bg-primary hover:text-white active:bg-primary/10",
+    ghost: "text-foreground hover:bg-muted active:bg-muted/80"
   };
 
   const sizes = {
