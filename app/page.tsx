@@ -16,7 +16,7 @@ export default function Home() {
         <Hero />
         
         {/* About Section - Arabic Premium */}
-        <section id="heritage" className="py-32 border-t border-zinc-50">
+        <section id="heritage" className="py-20 md:py-32 border-t border-zinc-50">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
               <motion.div 
@@ -65,12 +65,12 @@ export default function Home() {
         <Services />
 
         {/* Portfolio Section - MOBILE OPTIMIZED */}
-        <section id="portfolio" className="py-32 bg-white">
+        <section id="portfolio" className="py-20 md:py-32 bg-white">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="flex justify-between items-end mb-16">
+            <div className="flex flex-col-reverse md:flex-row justify-between items-start md:items-end gap-6 mb-16">
                <Link href="/projects" className="text-xs font-bold uppercase border-b border-zinc-900 pb-1 hover:text-primary hover:border-primary transition-all">تصفح كل الصور</Link>
                <div className="text-right">
-                  <span className="text-primary text-xs font-bold uppercase tracking-widest block mb-2">أعمال مختارة</span>
+                  <span className="text-primary text-xs font-bold uppercase tracking-widest block mb-2">إبداعاتنا المعمارية</span>
                   <h2 className="text-4xl font-bold text-zinc-900">معرض المشاريع</h2>
                </div>
             </div>

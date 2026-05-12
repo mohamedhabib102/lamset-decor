@@ -38,7 +38,7 @@ const services = [
 
 export const Services = () => {
   return (
-    <section id="services" className="py-24 bg-zinc-50 overflow-hidden">
+    <section id="services" className="py-20 md:py-32 bg-zinc-50 overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="text-center mb-16">
           <motion.h2 

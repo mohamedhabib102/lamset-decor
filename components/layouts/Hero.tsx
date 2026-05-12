@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-24 overflow-hidden bg-white">
+    <section className="relative flex items-center pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           

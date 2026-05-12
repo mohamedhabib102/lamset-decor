@@ -18,7 +18,7 @@ export const Header = () => {
             <Logo />
             
             <nav className="hidden md:flex items-center gap-8 text-sm font-bold text-zinc-600">
-              <Link href="/projects" className="hover:text-primary transition-colors">معرض الأعمال</Link>
+              <Link href="/#portfolio" className="hover:text-primary transition-colors">معرض الأعمال</Link>
               <Link href="/#services" className="hover:text-primary transition-colors">خدماتنا</Link>
               <Link href="/#heritage" className="hover:text-primary transition-colors">عنا</Link>
               <Link href="/#contact" className="hover:text-primary transition-colors">اتصل بنا</Link>

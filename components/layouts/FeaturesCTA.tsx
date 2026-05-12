@@ -31,7 +31,7 @@ export const FeaturesCTA = () => {
   return (
     <section id="contact" className="bg-white">
       {/* Black Features Bar */}
-      <div className="bg-zinc-900 py-16">
+      <div className="bg-zinc-900 py-12 md:py-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
             {features.map((feature, index) => (
@@ -53,7 +53,7 @@ export const FeaturesCTA = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="py-32 border-b border-zinc-100">
+      <div className="py-20 md:py-32 border-b border-zinc-100">
         <div className="mx-auto max-w-4xl px-6 text-center">
           <motion.h2 
             initial={{ opacity: 0, scale: 0.9 }}
