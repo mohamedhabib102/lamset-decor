@@ -52,7 +52,7 @@ export const Hero = () => {
         transition={{ delay: 1.5 }}
         className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3"
       >
-        <span className="text-xs font-bold tracking-[0.3em] text-zinc-400 uppercase">Ø§ÙƒØªØ´Ù Ø§Ù„Ù…Ø²ÙŠØ¯</span>
+        <span className="text-xs font-bold tracking-[0.3em] text-zinc-400 uppercase"> استكشف المزيد </span>
         <div className="w-0.5 h-16 bg-[#c5a059]" />
       </motion.div>
     </section>
