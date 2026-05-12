@@ -159,16 +159,16 @@ export const ContactContent = () => {
               </div>
             </div>
 
-            <div className="flex flex-row-reverse items-start gap-6">
+            {/* <div className="flex flex-row-reverse items-start gap-6">
               <div className="bg-[#c5a059]/10 p-4 rounded-2xl">
                 <FaEnvelope className="text-[#c5a059] text-2xl" />
               </div>
-              {/* <div>
+              <div>
                 <h4 className="text-xl font-bold text-zinc-900 mb-2">البريد الإلكتروني</h4>
                 <p className="text-zinc-500 mb-4 text-lg">راسلنا بطلبك أو استفسارك</p>
                 <Link dir='ltr' target="_blank" href="mailto:info@elsanaa.com" className="text-[#c5a059] font-bold text-lg hover:underline underline-offset-4">info@elsanaa.com</Link>
-              </div> */}
-            </div>
+              </div>
+            </div> */}
 
             <div className="flex flex-row-reverse items-start gap-6">
               <div className="bg-[#c5a059]/10 p-4 rounded-2xl">
